@@ -15,7 +15,7 @@ angular.module('exampleApp.services', [ ]).factory('ExampleService', ['$q', '$ti
       **/
 
     var deferred = $q.defer();
-    var totalResults = 213;
+    var totalResults = 237;
 
     var start;
     var limit;

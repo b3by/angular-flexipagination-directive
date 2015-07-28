@@ -6,7 +6,10 @@
     "Antonio Bevilacqua <b3by.in.th3.sky@gmail.com>"
   ],
   "description": "Yet another angular pagination directive. It provides both client side and server side pagination.",
-  "main": "src/directives/angular-flexipagination-directive.js",
+  "main": [
+    "src/directives/angular-flexipagination-directive.js",
+    "src/directives/angular-flexipagination-directive.html"
+    ],
   "moduleType": [
     "globals"
   ],

@@ -1,3 +1,5 @@
+[![Dependency Status](https://gemnasium.com/b3by/angular-flexipagination-directive.svg)](https://gemnasium.com/b3by/angular-flexipagination-directive)
+
 # angular-flexipagination-directive
 Yet another pagination directive for Angular. It supports both client-side and server-side pagination, and provides client level buffering.
 

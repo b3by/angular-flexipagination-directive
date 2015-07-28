@@ -5,8 +5,12 @@
   "directories": {
     "example": "example"
   },
+  "serve-this": {
+    "log-level": "verbose",
+    "folder": "./"
+  },
   "scripts": {
-    "start": "SERVE_THIS_FOLDER=$(pwd) serve-this",
+    "start": "serve-this",
     "postinstall": "bower install",
     "test": "protractor tests/protractor.conf.js"
   },

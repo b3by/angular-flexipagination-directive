@@ -7,7 +7,6 @@ angular.module('exampleApp.controllers', [ ]).controller('ExampleController', ['
     $scope.myResults = [ ];
     $scope.callingEvent = 'launchFirstRequest';
     $scope.paginateOnClient = false;
-    $scope.filterBy = 'filterName';
 
     $scope.generalRequest = { };
 

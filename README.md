@@ -41,7 +41,8 @@ generalResponse = {
 }
 ```
 
-Please note that **all the available page sizes should be exact submultiples of the selected buffer size**.
+Please note that **all the available page sizes should be exact submultiples of the selected buffer size**,
+otherwise a lot of cute kitties are going to cry.
 
 The client will paginate the buffered results, and no more requests will be sent to the server until the buffer is over.
 

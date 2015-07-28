@@ -7,7 +7,6 @@ angular.module('angularFlexiPagination.directives', [])
         restrict: 'A',
         templateUrl: '../src/directives/angular-flexipagination-directive.html',
         scope: {
-          filterBy: '@',
           originalRequest: '=',
           onPageChange: '&',
           displayableResults: '=',
@@ -28,10 +27,6 @@ angular.module('angularFlexiPagination.directives', [])
           $scope.bufferResults = [];
 
           $scope.request = angular.copy($scope.originalRequest);
-
-          if ($scope.filterBy) {
-            $scope.request.filterBy = [$scope.filterBy];
-          }
 
           $scope.onPageChange({request: $scope.request})
             .then(function (response) {

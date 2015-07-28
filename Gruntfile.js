@@ -11,6 +11,15 @@ module.exports = function(grunt) {
       }
     },
 
+    karma: {
+      unit: {
+        configFile: './tests/karma.conf.js',
+        options: {
+          files: ['./unit/*.js']
+        }
+      }
+    },
+
     protractor: {
       options: {
         keepAlive: true,
@@ -55,6 +64,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-protractor-runner');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-clean');

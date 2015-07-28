@@ -145,13 +145,13 @@ describe('The default paginator', function() {
       .then(function() {
         expect(element(by.id('tableElement1')).isPresent()).toBe(false);
         expect(element(by.id('tableElement10')).isPresent()).toBe(false);
-        element(by.id('tableElement211')).getText()
+        element(by.id('tableElement237')).getText()
           .then(function(value) {
-            expect(value).toEqual('211');
+            expect(value).toEqual('237');
           });
           element(by.id('pageNumberSelector')).getAttribute('value')
             .then(function(text) {
-              expect(text).toEqual('22');
+              expect(text).toEqual('24');
             });
       });
   });
@@ -163,7 +163,7 @@ describe('The default paginator', function() {
           .then(function() {
             element.all(by.repeater('item in myResults'))
               .then(function(array) {
-                expect(array.length).toEqual(13);
+                expect(array.length).toEqual(37);
               });
             element(by.id('pageNumberSelector')).getAttribute('value')
               .then(function(text) {

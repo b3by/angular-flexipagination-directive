@@ -5,7 +5,6 @@ angular.module('exampleApp.controllers', [ ]).controller('ExampleController', ['
   function($scope, $timeout, ExampleService) {
 
     $scope.myResults = [ ];
-    $scope.callingEvent = 'launchFirstRequest';
     $scope.paginateOnClient = false;
 
     $scope.generalRequest = { };

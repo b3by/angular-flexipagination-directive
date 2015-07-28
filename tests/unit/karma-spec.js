@@ -1,22 +1,27 @@
-describe('Unit: MainController', function() {
-    // Load the module with MainController
-    beforeEach(module('exampleApp'));
+describe('Unit: ExampleController', function () {
 
-    var ctrl, scope;
-    // inject the $controller and $rootScope services
-    // in the beforeEach block
-    beforeEach(inject(function($controller, $rootScope) {
-        // Create a new scope that's a child of the $rootScope
-        scope = $rootScope.$new();
-        // Create the controller
-        ctrl = $controller('ExampleController', {
-            $scope: scope
-        });
-    }));
+  beforeEach(module('exampleApp'));
 
-    it('should create $scope.greeting when calling sayHello',
-        function() {
-            expect(scope.callingEvent).toEqual("launchFirstRequest");
-        });
+  var ctrl, scope;
+
+  beforeEach(inject(function ($controller, $rootScope) {
+    scope = $rootScope.$new();
+    ctrl = $controller('ExampleController', {
+      $scope: scope
+    });
+  }));
+
+  it('should get all the required variables', function () {
+    expect(scope.paginateOnClient).toBe(false);
+    expect(scope.myResults.length).toEqual(0);
+    expect(scope.generalRequest.keys).toBe(undefined);
+    expect(scope.performRequest).toBeDefined();
+  });
+
+  it('should include the pagination params in the request', function () {
+    scope.paginationOnClient = true;
+    expect(scope.generalRequest.pagination.limit).toBe(100);
+    expect(scope.generalRequest.pagination.offset).toBe(0);
+  });
 
 });

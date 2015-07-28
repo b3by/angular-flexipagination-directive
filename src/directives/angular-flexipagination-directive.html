@@ -1,0 +1,55 @@
+<div id="paginator">
+  <div>
+
+    <button id="firstPageButton" class="btn btn-default" ng-disabled="requestOnFlight || currentPage === 1" ng-click="goToPage(1)">
+      <i class="fa fa-angle-double-left"></i>
+    </button>
+
+    <button id="previousPageButton" class="btn btn-default" ng-disabled="!isPreviousAvailable()" ng-click="goToPreviousPage()">
+      <i class="fa fa-angle-left"></i>
+    </button>
+
+    <button class="btn btn-default"
+            ng-class="{'btn-primary': currentPage === navButton.linkedPage}"
+            ng-disabled="requestOnFlight"
+            ng-repeat="navButton in navButtons"
+            ng-click="goToPage(navButton.linkedPage)"
+            ng-attr-id="{{'pageNavigator' + navButton.label}}">
+      {{navButton.label}}
+    </button>
+
+    <button id="nextPageButton" class="btn btn-default" ng-disabled="!isNextAvailable()" ng-click="goToNextPage()">
+      <i class="fa fa-angle-right"></i>
+    </button>
+
+    <button id="lastPageButton" class="btn btn-default" ng-disabled="requestOnFlight || currentPage === totalPages || !totalPages" ng-click="goToPage(totalPages)">
+      <i class="fa fa-angle-double-right"></i>
+    </button>
+
+    <div class="pull-right">
+      <form class="form-inline" ng-submit="goToPage(typedPage)">
+        <label class="boxed-right">
+          Page Size
+          <select id="pageSizeSelector"
+                  class="form-control"
+                  style="width: 100px"
+                  ng-model="pageSize"
+                  ng-options="range for range in resultRanges"
+                  ng-change="updatePaginatorToData()"
+                  ng-disabled="requestOnFlight">
+          </select>
+        </label>
+        <label>
+          Page Number
+          <input id="pageNumberSelector"
+                 ng-disabled="requestOnFlight"
+                 class="form-control"
+                 id="pageSelector"
+                 type="number"
+                 style="width: 100px"
+                 ng-model="typedPage"/> of {{totalPages}}
+        </label>
+      </form>
+    </div>
+  </div>
+</div>

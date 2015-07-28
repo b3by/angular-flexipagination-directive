@@ -6,8 +6,8 @@ angular.module('exampleApp.controllers', [ ]).controller('ExampleController', ['
 
     $scope.myResults = [ ];
     $scope.callingEvent = 'launchFirstRequest';
-    $scope.filterBy = "ciaociao";
     $scope.paginateOnClient = false;
+    $scope.filterBy = 'filterName';
 
     $scope.generalRequest = { };
 
@@ -22,10 +22,6 @@ angular.module('exampleApp.controllers', [ ]).controller('ExampleController', ['
       var promise = ExampleService.returnResults(request);
       return promise;
     };
-
-    $scope.performRequest($scope.generalRequest).then(function(data) {
-      $scope.$broadcast($scope.callingEvent, data);
-    });
 
   }
 

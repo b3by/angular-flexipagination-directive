@@ -29,14 +29,14 @@ angular.module('exampleApp.services', [ ]).factory('ExampleService', ['$q', '$ti
     }
 
     var response = {
-      result: [],
+      results: [],
       pagination: {
         count: totalResults
       }
     };
 
     for(var index = start; index < limit; index++) {
-      response.result.push({
+      response.results.push({
         id: index + 1,
         value: Math.random(10)
       });
@@ -46,12 +46,12 @@ angular.module('exampleApp.services', [ ]).factory('ExampleService', ['$q', '$ti
     if(request.pagination) {
       toSend = response;
     } else {
-      toSend = response.result;
+      toSend = response.results;
     }
 
     $timeout(function() {
       deferred.resolve(toSend);
-    }, 1000);
+    }, 500);
 
     return deferred.promise;
   }

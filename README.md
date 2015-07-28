@@ -19,7 +19,7 @@ If you are on Windows, set the variable `SERVE_THIS_FOLDER` to the root director
 So far, just e2e testing has been implemented for the directive. You just need an instance of webdriver-manager, then you just type `grunt test`.
 
 ## How it works
-This directive provides 2 different ways of organizing data into different pages: client-side and server-side pagination.
+This directive provides 2 different ways of organizing data into different pages: client-side and server-side.
 
 ### Server-side pagination
 If the `client-pagination` flag is set to `false`, each request will contain an extra object for pagination parameters.

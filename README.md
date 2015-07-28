@@ -17,3 +17,5 @@ If you are on Windows, set the variable `SERVE_THIS_FOLDER` to the root director
 
 ## Testing
 So far, just e2e testing has been implemented for the directive. You just need an instance of webdriver-manager, then you just type `grunt test`.
+
+## How to use it

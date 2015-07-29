@@ -13,8 +13,8 @@ bower install angular-flexipagination-directive
 ```
 ### Running the example
 In order to run the example locally on your machine, just clone this repository, then install all the required dependencies with `npm install`.
-When done, just run `npm start`, then navigate to `localhost:8888` (the example is serverized by [this awesome packet](https://github.com/helloIAmPau/serve-this){:target="_blank"}
-by [helloIAmPau](https://github.com/helloIAmPau){:target="_blank"}, and the configurations can be found in the `package.json` file).
+When done, just run `npm start`, then navigate to `localhost:8888` (the example is serverized by [this awesome packet](https://github.com/helloIAmPau/serve-this)
+by [helloIAmPau](https://github.com/helloIAmPau), and the configurations can be found in the `package.json` file).
 
 ## Testing
 Several grunt task have been defined for testing purpose (it's still a work in progress). You can run unit testing, e2e testing or both. For continuous testing,

@@ -16,6 +16,12 @@
     "test": "protractor tests/protractor.conf.js"
   },
   "author": "Antonio Bevilacqua [b3by.in.th3.sky@gmail.com]",
+  "keywords": [
+    "pagination",
+    "paginator",
+    "angular",
+    "directive"
+  ],
   "license": "MIT",
   "devDependencies": {
     "angular-mocks": "^1.4.3",

@@ -27,7 +27,7 @@ just the unit testing has been specified.
 * `grunt` will just call the full test task
 
 ## How it works
-This directive provides 2 different ways of organizing data into different pages: client-side and server-side.
+This directive provides 2 different ways of organizing data into separate pages: client-side and server-side.
 
 ### Server-side pagination
 If the `client-pagination` flag is set to `false`, each request will contain an extra object for pagination parameters.

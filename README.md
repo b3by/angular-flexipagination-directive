@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/b3by/angular-flexipagination-directive.svg?branch=master)](https://travis-ci.org/b3by/angular-flexipagination-directive)
 [![Dependency Status](https://gemnasium.com/b3by/angular-flexipagination-directive.svg)](https://gemnasium.com/b3by/angular-flexipagination-directive)
 [![Bower version](https://badge.fury.io/bo/angular-flexipagination-directive.png)](http://badge.fury.io/bo/angular-flexipagination-directive)
 

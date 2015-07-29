@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/b3by/angular-flexipagination-directive.svg?branch=master)](https://travis-ci.org/b3by/angular-flexipagination-directive)
 [![Dependency Status](https://gemnasium.com/b3by/angular-flexipagination-directive.svg)](https://gemnasium.com/b3by/angular-flexipagination-directive)
-[![Bower version](https://badge.fury.io/bo/angular-flexipagination-directive.png)](http://badge.fury.io/bo/angular-flexipagination-directive)
+[![Bower version](https://badge.fury.io/bo/angular-flexipagination-directive.svg)](http://badge.fury.io/bo/angular-flexipagination-directive)
 
 # angular-flexipagination-directive
 Yet another pagination directive for Angular. It supports both client-side and server-side pagination, and provides client level buffering.

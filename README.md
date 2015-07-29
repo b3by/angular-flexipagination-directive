@@ -17,6 +17,15 @@ When done, just run `npm start`, then navigate to `localhost:8888` (the example 
 can be found in the `package.json` file).
 
 ## Testing
+Several grunt task have been defined for testing purpose (it's still a work in progress). You can run unit testing, e2e testing or both. For continuous testing,
+just the unit testing has been specified.
+
+* `grunt unitTest` will execute karma testing once
+* `grunt e2eTest` will execute protractor testing once (please make sure that a webdriver-manager instance is running)
+* `grunt fullTest` will execute both karma and protractor testing once
+* `grunt testDev` will execute karma testing not in single run mode
+* `grunt` will just call the full test task
+
 So far, just e2e testing has been implemented for the directive. You just need an instance of webdriver-manager, then you just type `grunt test`.
 
 ## How it works

@@ -6,4 +6,4 @@ before_script:
   - sh -e /etc/init.d/xvfb start
   - export CHROME_BIN=chromium-browser
   - npm install
-script: ./node_modules/.bin/grunt karma:unit
+script: ./node_modules/.bin/grunt unitTest

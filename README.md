@@ -26,8 +26,6 @@ just the unit testing has been specified.
 * `grunt testDev` will execute karma testing not in single run mode
 * `grunt` will just call the full test task
 
-So far, just e2e testing has been implemented for the directive. You just need an instance of webdriver-manager, then you just type `grunt test`.
-
 ## How it works
 This directive provides 2 different ways of organizing data into different pages: client-side and server-side.
 

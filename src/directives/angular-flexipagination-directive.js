@@ -1,4 +1,4 @@
-angular.module('angularFlexiPagination.directives', [])
+angular.module('angularFlexipagination.directive', [])
 
   .directive('angularFlexipagination', [
     function () {

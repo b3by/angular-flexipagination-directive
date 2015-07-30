@@ -1,7 +1,7 @@
 angular.module('angularFlexiPagination.directives', [])
 
-  .directive('angularFlexiPagination', ['ExampleService',
-    function (ExampleService) {
+  .directive('angularFlexiPagination', [
+    function () {
 
       return {
         restrict: 'A',

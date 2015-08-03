@@ -12,9 +12,13 @@ module.exports = function(grunt) {
     },
 
     karma: {
-      unit: {
+      singleRun: {
         configFile: './tests/karma.conf.js',
         singleRun: true
+      },
+      dev: {
+        configFile: './tests/karma.conf.js',
+        singleRun: false
       }
     },
 
@@ -46,29 +50,22 @@ module.exports = function(grunt) {
       }
     },
 
-    watch: {
-      options: {
-        livereload: true
-      },
-      protractor: {
-        files: ['src/directives/*', 'tests/e2e/*.js'],
-        tasks: ['protractor:singleRun']
-      }
-    },
-
     clean: ["./node_modules", "bower_components"]
 
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-protractor-runner');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-clean');
 
-  grunt.registerTask('default', ['jshint']);
-  grunt.registerTask('test', ['jshint', 'connect:test', 'protractor:singleRun']);
-  grunt.registerTask('testDev', ['jshint', 'connect:test', 'protractor:singleRun', 'watch:protractor']);
+  grunt.registerTask('default', ['fullTest']);
+
+  grunt.registerTask('unitTest', ['jshint', 'karma:singleRun']);
+  grunt.registerTask('e2eTest', ['jshint', 'connect:test', 'protractor:singleRun']);
+
+  grunt.registerTask('fullTest', ['unitTest', 'e2eTest']);
+  grunt.registerTask('testDev', ['jshint', 'karma:dev']);
 
 }

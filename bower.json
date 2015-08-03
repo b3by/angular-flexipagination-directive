@@ -1,6 +1,6 @@
 {
   "name": "angular-flexipagination-directive",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "homepage": "",
   "authors": [
     "Antonio Bevilacqua <b3by.in.th3.sky@gmail.com>"
@@ -16,6 +16,7 @@
   "keywords": [
     "angular",
     "pagination",
+    "paginator",
     "directive"
   ],
   "license": "MIT",

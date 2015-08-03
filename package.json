@@ -1,6 +1,6 @@
 {
   "name": "angular-flexipagination-directive",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "Simple angular directive for client and server pagination",
   "repository": "https://github.com/b3by/angular-flexipagination-directive",
   "directories": {
@@ -16,6 +16,12 @@
     "test": "protractor tests/protractor.conf.js"
   },
   "author": "Antonio Bevilacqua [b3by.in.th3.sky@gmail.com]",
+  "keywords": [
+    "pagination",
+    "paginator",
+    "angular",
+    "directive"
+  ],
   "license": "MIT",
   "devDependencies": {
     "angular-mocks": "^1.4.3",
@@ -25,7 +31,6 @@
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-connect": "^0.10.1",
     "grunt-contrib-jshint": "^0.11.2",
-    "grunt-contrib-watch": "^0.6.1",
     "grunt-karma": "^0.12.0",
     "grunt-protractor-runner": "^2.0.0",
     "grunt-protractor-webdriver": "^0.2.0",
@@ -35,6 +40,7 @@
     "karma-chrome-launcher": "^0.2.0",
     "karma-firefox-launcher": "^0.1.6",
     "karma-jasmine": "^0.3.6",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
     "protractor": "^2.1.0",
     "serve-this": "^0.1.6"
   }

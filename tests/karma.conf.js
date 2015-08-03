@@ -11,6 +11,7 @@ module.exports = function(config) {
         './../bower_components/angular/angular.js',
         './../node_modules/angular-mocks/angular-mocks.js',
         './../src/directives/angular-flexipagination-directive.js',
+        './../src/directives/angular-flexipagination-directive.html',
         './../example/js/controllers.js',
         './../example/js/services.js',
         './../example/js/app.js',
@@ -19,7 +20,13 @@ module.exports = function(config) {
 
     exclude: [ ],
 
-    preprocessors: { },
+    preprocessors: {
+      './../src/directives/angular-flexipagination-directive.html': ['ng-html2js']
+    },
+
+    ngHtml2JsPreprocessor: {
+      moduleName: 'template'
+    },
 
     reporters: ['dots'],
 

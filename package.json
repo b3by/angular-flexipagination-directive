@@ -1,6 +1,6 @@
 {
   "name": "angular-flexipagination-directive",
-  "version": "0.2.3",
+  "version": "0.2.5",
   "description": "Simple angular directive for client and server pagination",
   "repository": "https://github.com/b3by/angular-flexipagination-directive",
   "directories": {

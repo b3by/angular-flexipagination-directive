@@ -17,7 +17,7 @@ When done, just run `npm start`, then navigate to `localhost:8888` (the example 
 by [helloIAmPau](https://github.com/helloIAmPau), and the configurations can be found in the `package.json` file).
 
 ## Testing
-Several grunt task have been defined for testing purpose (it's still a work in progress). You can run unit testing, e2e testing or both. For continuous testing,
+Several grunt tasks have been defined for testing purpose (it's still a work in progress). You can run unit testing, e2e testing or both. For continuous testing,
 just the unit testing has been specified.
 
 * `grunt unitTest` will execute karma testing once

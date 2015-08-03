@@ -1,14 +1,21 @@
 exports.config = {
 
+  baseUrl: 'http://' + (process.env.CI ? 'ngadmin' : 'localhost') + ':8000',
+
   seleniumAddress: 'http://localhost:4444/wd/hub',
 
   multiCapabilities: [
     {
-      browserName: 'chrome'
+      browserName: 'chrome',
+      'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER ? process.env.TRAVIS_JOB_NUMBER : null,
+      name: 'ng-admin'
     }
   ],
 
   specs: [ './e2e/protractor-spec.js' ],
+
+  sauceUser: process.env.SAUCE_USERNAME,
+  sauceKey: process.env.SAUCE_ACCESS_KEY,
 
   framework: 'jasmine2',
 
@@ -22,7 +29,7 @@ exports.config = {
     isVerbose: false,
     realtimeFailure: true,
     includeStackTrace: true,
-    defaultTimeoutInterval: 30000
+    defaultTimeoutInterval: 360000
   }
 
 };

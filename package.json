@@ -13,7 +13,7 @@
   "scripts": {
     "start": "serve-this",
     "postinstall": "bower install",
-    "test": "protractor tests/protractor.conf.js"
+    "test": "./node_modules/.bin/protractor tests/protractor.conf.js"
   },
   "author": "Antonio Bevilacqua [b3by.in.th3.sky@gmail.com]",
   "keywords": [

@@ -64,7 +64,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('unitTest', ['jshint', 'karma:singleRun']);
   grunt.registerTask('e2eTest', ['jshint', 'connect:test', 'protractor:singleRun']);
-  grunt.registerTask('test', ['e2eTest']);
 
   grunt.registerTask('fullTest', ['unitTest', 'e2eTest']);
   grunt.registerTask('testDev', ['jshint', 'karma:dev']);

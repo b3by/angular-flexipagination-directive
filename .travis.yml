@@ -6,6 +6,6 @@ before_script:
   - sh -e /etc/init.d/xvfb start - nohup bash -c
   - export CHROME_BIN=chromium-browser
   - npm install
-  - ./node_modules/.bin/webdriver-manager update--standalone
-  - ./nodemodules/protractor/bin/webdriver-manager start 2>&1 & - sleep 5
+  - ./node_modules/.bin/webdriver-manager update --standalone
+  - ./node_modules/.bin/webdriver-manager start 2>&1 & - sleep 2
 script: ./node_modules/.bin/grunt e2eTest

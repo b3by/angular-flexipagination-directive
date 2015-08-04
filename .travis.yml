@@ -7,5 +7,7 @@ before_script:
   - sleep 3
   - export CHROME_BIN=chromium-browser
   - npm install
-  - rackup
+  - ./node_modules/protractor/bin/webdriver-manager update --standalone
+  - ./node_modules/protractor/bin/webdriver-manager start 2>&1 &
+  - sleep 3
 script: ./node_modules/.bin/grunt e2eTest

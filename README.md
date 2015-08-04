@@ -30,7 +30,7 @@ just the unit testing has been specified.
 This directive provides 2 different ways of organizing data into separate pages: client-side and server-side.
 
 ### Server-side pagination
-If the `client-pagination` flag is set to `false`, each request will contain an extra object for pagination parameters.
+If the `client-pagination` flag is set to `false`, each request will contain an extra object for pagination parameters:
 
 ```
 generalRequest.pagination = {
@@ -40,7 +40,7 @@ generalRequest.pagination = {
 ```
 
 The server should be able to paginate the results and, according to the above example, send 100 results (limit) starting from zero (offset),
-along with the total result count.
+along with the total result count:
 
 ```
 generalResponse = {

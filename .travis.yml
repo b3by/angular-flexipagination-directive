@@ -1,12 +1,4 @@
 language: node_js
-env:
-  global:
-    - secure: ARslYiw1erqHv1JXIMZqsiu6zYU9kEKEi9HbHluX/8ZvvqJIdSvB9x2ej8eiJqvC+lSSTtbP1rJRDtYc0nTD1+7zF7hEV7jrfcRyg97+18bqlCjGHdMyiYhjzCmxW1ptRs9KhkYrjMvplr615LU94vP+lB4oUpr4x+lQHxM1hyAnv/y8gn1saZz93090MNipmhOp5C/i4wI5aPeUmn7YqiR5Fm+s/M3OEcHH5XosidDLJXtI39TJc5RILDCFM2KHaaJs0262CIRtL2yvrkE1omgtYJaNVnSrWwLaJdx8qFgtQGOJGijPDliHPOTZtPbqsKKsWNpKqPkFeosQFzjHmVUbmE8w/w8NN6afX0Z9qvFNTHV5c9E0ZLWsdmVIVxXu1lC73gUwhwmPlchThZbDqZ5XjeWAAgPCk14+BfNJcWd9LOEyQvGdtJfKLguc1XSQiwlQaNJmP+RkuM4lwmYkvKUQHn5Pes69lBQ7yJxNpzu2OUNkA8qvh9U6UrOLRktwm08Y/ZzYPFWzANqoOnOmI+r4YeY+MxRxUvFtvtDW9wPRBJgfXt4hBZICqDJCxHj5dPxGxSDvTZh15iHaJqJvLicggzU+3qAxoYzINj/iRm2xyLwddVE0XDQKvw6mTPbswjMcQbtFV2dWAFc17yYhjPOaGTthtjCyQ9aTKCsFhQM=
-    - secure: qyQlOBIj/9C56XYNTrQ7uq+c8xE1oC2qCPPyJscvnn0d+OFpb+kuROC56Nv1yyGsF/tg0jLTXXHw7PNTzeFZNajQLeFV1SaQ3w0PKuK/VZ2CfPcgrv3smaVeEfNoPjgYk/Xuc96cRDjLnzbViDkpXURDfVLoajXBNzvEq9/R5iIVCCkh5a+mWBSnisOQDPG0/cc8Bo4w0TU1hlgcpBmRZ3//+lVivXtzJuC2PxijmUhHFSvmu8bkNpeW+O2mIBKfEwt7ekZSK88nPTgYiMy0kPncAoSW8DYjBHY7t+rqMGd92SlLFtGxFsVr0HBrHxKAXiLWP2zpsqZI1j/jQJNI1q9pouP2YBT2MODv4C+SmYv0ZDqtwaXX6gmgMANimTkpZw0HoMqnlSyYrj6q4XnGkj1HjzUeWNFLEZ3P3j2Q7uu+9HbsejOEA7DNO7ijNxDzf1MYLx3lbxOUY4GX67sfSQ6s8jJUJo+QCCLKWHSIgbf2zFSrImFEVpD+Sffrf/YWB7/weo/IuMNKxZ2VjAidQ2iXdzC4JWNHxiV88O+tNneFodyNkq+ZwOYRqwhFRHPGIJk1PWhDWlMl1rxkpwu5NpqG4hGxsJKJRfEqGCOeoEsVGv4vzpK4WtV9AJNO0kcxu/Hic9sgiG3dN53W7Mu3PmLc8ECMQP0XuOLl6XdE2sI=
-sauce_connect: true
-addons:
-  hosts:
-    ngadmin
 node_js:
   - 0.12
 before_script:
@@ -14,4 +6,6 @@ before_script:
   - sh -e /etc/init.d/xvfb start
   - export CHROME_BIN=chromium-browser
   - npm install
-script: ./node_modules/.bin/grunt unitTest
+  - ./node_modules/.bin/webdriver-manager update--standalone
+  - ./node_modules/.bin/webdriver-manager start &
+script: ./node_modules/.bin/grunt fullTest

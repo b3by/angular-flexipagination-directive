@@ -20,10 +20,6 @@ module.exports = function(config) {
 
     exclude: [ ],
 
-    preprocessors: {
-      './../src/directives/angular-flexipagination-directive.html': ['ng-html2js']
-    },
-
     ngHtml2JsPreprocessor: {
       moduleName: 'template'
     },

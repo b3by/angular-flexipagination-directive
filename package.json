@@ -28,7 +28,7 @@
     "bower": "^1.4.1",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
-    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-connect": "^0.11.2",
     "grunt-contrib-jshint": "^0.11.2",
     "grunt-karma": "^0.12.0",
@@ -40,8 +40,8 @@
     "karma-chrome-launcher": "^0.2.0",
     "karma-firefox-launcher": "^0.1.6",
     "karma-jasmine": "^0.3.6",
-    "karma-ng-html2js-preprocessor": "^0.1.2",
-    "protractor": "^2.1.0",
+    "karma-ng-html2js-preprocessor": "^0.2.0",
+    "protractor": "^3.0.0",
     "serve-this": "^0.1.6",
     "webdriver-manager": "^7.0.1"
   }

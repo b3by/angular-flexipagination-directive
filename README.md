@@ -1,6 +1,6 @@
 [![Build Status](https://img.shields.io/travis/b3by/angular-flexipagination-directive.svg?style=flat-square)](https://travis-ci.org/b3by/angular-flexipagination-directive)
 [![Dependency Status](https://img.shields.io/gemnasium/b3by/angular-flexipagination-directive.svg?style=flat-square)](https://gemnasium.com/b3by/angular-flexipagination-directive)
-[![BOWER version](https://img.shields.io/bower/v/angular-flexipagination-directive.svg?style=flat-square)]()
+[![BOWER version](https://img.shields.io/bower/v/angular-flexipagination-directive.svg?style=flat-square)](https://github.com/b3by/angular-flexipagination-directive/archive/master.zip)
 
 # angular-flexipagination-directive
 Yet another pagination directive for Angular. It supports both client-side and server-side pagination, and provides client level buffering.
